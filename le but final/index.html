@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
 
     <title>Selfies à Wookies</title>
   </head>
@@ -37,31 +38,59 @@
             </nav>  
        
     </header>
-    <main role="main" class="container-fluid" >
+    <main role="main" class="container" >
         <h1 class="text-center">Selfies à Wookies</h1>
         
         <div class="row">
 
         </div>
 
-        <div class="row shadow my-5 py-2">
-            <div class="col header">
-                        ???
-            </div>
+        <article class="row shadow my-5 py-2">
+            <header class="col header d-flex">
+                <div class="">
+                    <p class="h5">
+                        Chewie the hippie !
+                    </p>
+                </div>
+                <div class="float-right">
+                    <a class="one-row more-options" href="#" data-toggle="modal" data-target="#exampleModal">[...]</a>
+                </div>
+            </header>
             <div class="w-100"></div>
             <div class="col content">
                 <div>
-                    <img src="https://i.imgur.com/R99ilYM.jpg" />
+                    <img class="img-fluid" async src="https://i.imgur.com/R99ilYM.jpg" />
                 </div>
             </div>
             <div class="w-100"></div>
             <div class="col footer">
                 <img src="..." alt="..." class="rounded">
             </div>
-        </div>
+        </article>
 
         
     </main>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Plus d'actions</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="list-group" data-dismiss="modal">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        Lance un duel !
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" data-dismiss="modal">Fermer</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- mobile first : small size -->
     
@@ -71,5 +100,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js" ></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('.more-options').trigger('focus');
+        })
+    </script>
   </body>
 </html>
