@@ -8,7 +8,9 @@
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
