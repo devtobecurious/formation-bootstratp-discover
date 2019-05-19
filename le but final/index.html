@@ -15,8 +15,8 @@
   </head>
   <body>
 
-    <header >
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-warning mb-4">
                 <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="SelfiW">
                     <h1>SelfiW</h1>
                 </a>
@@ -30,7 +30,7 @@
                             <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="mes-duels.html">Mes duels</a>
+                            <a class="nav-link" href="mes-duels.html">Mes duels <span class="badge badge-danger">4</span></a>
                         </li>
                     </ul>
                     <form class="form-inline mt-2 mt-md-0">
@@ -42,10 +42,6 @@
     </header>
     <main role="main" class="container" >
         <h1 class="text-center">Selfies à Wookies</h1>
-        
-        <div class="row">
-
-        </div>
 
         <article class="row shadow my-5 py-2">
             <header class="col header d-flex">
@@ -67,15 +63,34 @@
                 </div>
             </div>
             <div class="w-100"></div>
-            <div class="col footer">
+            <div class="col footer d-flex">
                <div>
-                    <i class="far fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+               </div>
+               <div class="ml-3">
+                    <a href="lancer-un-duel.html"><i class="fas fa-bolt"></i></a>
                </div>
             </div>
         </article>
 
         
     </main>
+
+    <footer class="fixed-bottom border-top bg-light">
+        <div class="row">
+            <div class="col text-center">
+                <i class="far fa-images" style="font-weight:800; font-size:32px;"></i>
+            </div>
+
+            <div class="col text-center">
+                <i class="far fa-dog" style="font-weight:800; font-size:32px;"></i>
+            </div>
+
+            <div class="col">
+                 <i class="far fa-user-circle" style="font-weight:800; font-size:32px;"></i>
+            </div>
+        </div>
+    </footer>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
