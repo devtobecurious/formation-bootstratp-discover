@@ -7,13 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.css">
     <link rel="stylesheet" href="custom.css">
 
     <title>Selfies à Wookies</title>
   </head>
   <body>
 
-    <header >
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-warning mb-4">
                 <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="SelfiW">
                     <h1>SelfiW</h1>
@@ -41,13 +43,73 @@
     <main role="main" class="container" >
         <h1 class="text-center">Mes duels</h1>
         
-        <div class="row">
+        <div class="row border shadow">
+            <div class="col-xl">
+                <img class="img-fluid" async src="https://i.imgur.com/R99ilYM.jpg" />
+                
+                <div class="position-absolute" style="top: 50%; left: 40%">
+                     <i class="fas fa-check-circle" style="color: green; font-size:64px;"></i>
+                </div>
+            </div>
 
+            <div class="col-xl align-self-center text-center">
+                <!-- <div class="row">
+                    <div class="col"></div>
+                    <div class="col text-center"> <i class="fas fa-comments" style="font-size:128px;"></i></div>
+                    <div class="col"></div>
+                </div> -->
+                <i class="fas fa-comments" style="font-size:128px;"></i>
+            </div>
+
+            <div class="col-xl">
+                <img class="img-fluid" async src="https://i.imgur.com/R99ilYM.jpg" />
+            </div>
+        </div>
+
+
+        <div class="row border shadow my-5">
+            <div class="col-xl">
+                <img class="img-fluid" async src="https://i.imgur.com/R99ilYM.jpg" />
+            
+            </div>
+
+            <div class="col-xl align-self-center text-center">
+                <!-- <div class="row">
+                    <div class="col"></div>
+                    <div class="col text-center"> <i class="fas fa-comments" style="font-size:128px;"></i></div>
+                    <div class="col"></div>
+                </div> -->
+                <i class="fas fa-comments" style="font-size:128px;"></i>
+            </div>
+
+            <div class="col-xl">
+                <img class="img-fluid" async src="https://i.imgur.com/R99ilYM.jpg" />
+
+                <div class="position-absolute" style="top: 50%; left: 40%">
+                     <i class="fas fa-check-circle" style="color: green; font-size:64px;"></i>
+                </div>
+            </div>
         </div>
 
 
         
     </main>
+
+     <footer class="fixed-bottom border-top bg-light">
+        <div class="row">
+            <div class="col text-center">
+                <a href="mes-selfies.html"><i class="far fa-images" style="font-weight:800; font-size:32px;"></i></a>
+            </div>
+
+            <div class="col text-center">
+                <i class="far fa-dog" style="font-weight:800; font-size:32px;"></i>
+            </div>
+
+            <div class="col text-center">
+                <a href="mon-profil.html"><i class="far fa-user-circle" style="font-weight:800; font-size:32px;"></i></a>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- mobile first : small size -->
