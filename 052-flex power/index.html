@@ -29,6 +29,37 @@
             display:contents;
             width: 1.2em; /* sert  ici, car inline-block */
         }
+
+        .container-grid {
+            display:grid;
+            grid-template-rows:  2em 2em;
+            grid-template-columns:  2em 3em 4em;
+        }
+
+        .container-table {
+            display:table; /* container simulant un tableau */
+        }
+
+        .container-list-item > .row {
+            display:list-item; /* simule une liste à puces */
+        }
+
+        .container-grid-repeat {
+            grid-template-columns: repeat(5, 1fr 2em); /* repète 5 fois : une colonne de 1fr et 2 fois la taille du parent */
+        }
+
+        .container-grid-column > .row {
+            grid-auto-flow: column; /* se place en auto par colonne      */
+        }
+
+        .container-grid-row > .row {
+            grid-auto-flow: row; /* se place en auto par colonne      */
+            width: 100%;
+        }
+
+        .container-table > .row {
+            display: table-cell; /* se comporte comme une cellule d'un tableau, et profite maintenant de ses fonctionnalités */
+        }
         
         .row {
             width: 0.3em;
@@ -37,12 +68,15 @@
 </head>
 <body>
     <h2>Inline</h2>
+    <i>Même ligne sans changement taille</i>
     <div class="container-inline margin">
         <div class="row border">1</div>
         <div class="row border">1</div>
         <div class="row border">1</div>
     </div>
     
+    <h2>Inline block</h2>
+    <i>Même ligne mais taille changeable</i>
     <div class="container-inline-block margin">
         <div class="row border">1</div>
         <div class="row border">1</div>
@@ -50,9 +84,84 @@
     </div>
     
     <h2>Contents</h2>
+    <i>Devient un contenu</i>
     <div class="container-contents margin">
         <div class="row border">1</div>
         <div class="row border">1</div>
+        <div class="row border">1</div>
+    </div>
+
+    <h2>Grid</h2>
+    <i>Concept de grille : fonctionne avec grid-column et grid-row, avec grid-template-rows et grid-template-columns</i>
+    <div class="container-grid container-grid-column margin">
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+    </div>
+
+    <div class="container-grid container-grid-row margin">
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+    </div>
+
+    <div class="container-grid container-grid-repeat container-grid-row margin">
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+    </div>
+
+    <h2>Table</h2>
+    <i>Concept de grille tableau</i>
+    <div class="container-table margin">
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+    </div>
+
+    <h2>List item</h2>
+    <i>Concept de grille list à puces</i>
+    <div class="container-list-item margin">
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+
         <div class="row border">1</div>
     </div>
 </body>
