@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        .border {
+            border: 0.25em solid blue;
+        }
+        
+        .margin {
+            margin: 1.2em;
+        }
+        
+        .container-inline > .row {
+            display:inline;
+            width: 1.2px; /* ne sert pas ici, car inline */
+        }
+        
+        .container-inline-block > .row {
+            display:inline-block;
+            width: 1.2em; /* sert  ici, car inline-block */
+        }
+
+        .container-contents > .row {
+            display:contents;
+            width: 1.2em; /* sert  ici, car inline-block */
+        }
+        
+        .row {
+            width: 0.3em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Inline</h2>
+    <div class="container-inline margin">
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+    </div>
+    
+    <div class="container-inline-block margin">
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+    </div>
+    
+    <h2>Contents</h2>
+    <div class="container-contents margin">
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+        <div class="row border">1</div>
+    </div>
+</body>
+</html>
