@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .margin-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            background-color: darkslategrey;
+            width: 14em;
+        }
+
+        .big-container {
+            width: 20em;
+            height: 10em;
+        }
+
+        .direction-row {
+            flex-direction: row;
+        }
+
+        .direction-column {
+            flex-direction: column;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap; /* sur plusieurs lignes au besoin */
+        }
+
+        .justify-content-end {
+            justify-content: flex-end;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .justify-content-space-evenly {
+            justify-content: space-evenly;
+        }
+
+        .align-items-flex-start {
+            align-items: flex-start;
+        }
+
+        .align-items-flex-end {
+            align-items: flex-end;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .align-content-flex-end {
+            align-content: flex-end;
+        }
+
+        .align-content-flex-start {
+            align-content: flex-start;
+        }
+
+        .align-content-flex-center {
+            align-content: center;
+        }
+
+        .container > .row {
+            margin: 0.2em;
+            padding: 0.2em;
+            width: 3em;
+        }
+
+        .container-flex {
+            display: flex;
+        }
+
+        .row {
+            border: 0.2em solid white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex basic</h2>
+    <i>L'idée ici c'est comme le inline, d'avoir un système qui affiche sur une même ligne</i>
+    <div class="container container-flex margin-auto">
+        <div class="row">1</div>
+        <div class="row">2</div>
+        <div class="row">3</div>
+    </div>
+
+    <h2>Flex direction row</h2>
+    <i>Affichage par ligne</i>
+    <div class="container container-flex margin-auto direction-row">
+        <div class="row">1</div>
+        <div class="row">2</div>
+        <div class="row">3</div>
+    </div>
+
+    <h2>Flex direction column</h2>
+    <i>Affichage par colonne</i>
+    <div class="container container-flex margin-auto direction-column">
+        <div class="row">1</div>
+        <div class="row">2</div>
+        <div class="row">3</div>
+
+        <div class="row">3</div>
+    </div>
+
+    <h2>Flex wrap</h2>
+    <i>Affichage par ligne, avec création nouvelle ligne au besoin</i>
+    <div class="container container-flex margin-auto flex-wrap">
+        <div class="row">1</div>
+        <div class="row">2</div>
+        <div class="row">3</div>
+
+        <div class="row">3</div>
+    </div>
+
+    <h2>Justify content - end</h2>
+    <i>Alignement des divs enfants : ici on commence par la fin</i>
+    <div class="container container-flex margin-auto justify-content-end">
+        <div class="row">1</div>
+        <div class="row">2</div>
+    </div>
+
+    <h2>Justify content - center</h2>
+    <i>Alignement des divs enfants : ici on centre</i>
+    <div class="container container-flex margin-auto justify-content-center">
+        <div class="row">1</div>
+        <div class="row">2</div>
+    </div>
+
+    <h2>Justify content - space</h2>
+    <i>Alignement des divs enfants : ici on ajoute de l'espace au besoin, de manière égale</i>
+    <div class="container container-flex margin-auto justify-content-space-evenly">
+        <div class="row">1</div>
+        <div class="row">2</div>
+    </div>
+
+    <h2>Alignement des enfants - Flex start</h2>
+    <i>Alignement des divs enfants : Ici c'est par le haut que tout est aligné</i>
+    <div class="container big-container container-flex margin-auto align-items-flex-start">
+        <div class="row">1</div>
+        <div class="row" style="height: 8em">2</div>
+    </div>
+
+    <h2>Alignement des enfants - Flex end</h2>
+    <i>Alignement des divs enfants : Ici c'est par le bas que tout est aligné</i>
+    <div class="container big-container container-flex margin-auto align-items-flex-end">
+        <div class="row">1</div>
+        <div class="row" style="height: 8em">2</div>
+    </div>
+
+    <h2>Alignement des enfants - Flex center</h2>
+    <i>Alignement des divs enfants : Ici c'est par le centre que tout est aligné</i>
+    <div class="container big-container container-flex margin-auto align-items-center">
+        <div class="row">1</div>
+        <div class="row" style="height: 8em">2</div>
+    </div>
+
+    <h2>Alignement du contenu enfant - Flex center</h2>
+    <i>Alignement des divs enfants : Ici c'est par le centre que tout est aligné</i>
+    <div class="container big-container container-flex margin-auto align-content-flex-center">
+        <div class="row">1</div>
+        <div class="row" style="height: 8em">2</div>
+    </div>
+
+    <h2>Alignement du contenu enfant - Flex start</h2>
+    <i>Alignement des divs enfants : Ici c'est par le début que tout est aligné</i>
+    <div class="container big-container container-flex margin-auto align-content-flex-start">
+        <div class="row">1</div>
+        <div class="row" style="width: 8em">2</div>
+        <div class="row">3</div>
+        <div class="row">4</div>
+        <div class="row">5</div>
+    </div>
+</body>
+</html>
