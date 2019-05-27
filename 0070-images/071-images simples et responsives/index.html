@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.css">
+
+    <link rel="stylesheet" href="custom.css">
+
+    <title>Selfies à Wookies</title>
+</head>
+
+<body>
+    <h2>Image simple</h2>
+    <img src="https://i.imgur.com/R99ilYM.jpg" />
+
+    <h2>Image adaptée à l'écran</h2>
+    <img class="img-fluid" src="https://i.imgur.com/R99ilYM.jpg" />
+
+    <h2>Image thumbnail (avec un bord)</h2>
+    <img class="img-thumbnail" src="https://i.imgur.com/R99ilYM.jpg" />
+
+    <h2>Placer l'image</h2>
+    <div class="row">
+        <div class="col"><img class="img-thumbnail rounded float-right" src="https://i.imgur.com/R99ilYM.jpg" /></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+    <h2>Centrer l'image</h2>
+    <div class="text-center">
+        <img class="rounded img-fluid mx-auto" width="20%" src="https://i.imgur.com/R99ilYM.jpg" />
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

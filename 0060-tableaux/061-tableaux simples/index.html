@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.css">
+
+    <link rel="stylesheet" href="custom.css">
+
+    <title>Selfies à Wookies</title>
+</head>
+
+<body>
+    <h2>Sans class table</h2>
+    <table class="">
+        <thead>
+            <th>Nom</th>
+            <th>Duel</th>
+            <th>Gagnant ?</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chewie</td>
+                <td>Duel 1</td>
+                <td>Oui</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Avec class table</h2>
+    <table class="table">
+        <thead>
+            <th>Nom</th>
+            <th>Duel</th>
+            <th>Gagnant ?</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chewie</td>
+                <td>Duel 1</td>
+                <td>Oui</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Notion de scope</h2>
+    <table class="table">
+        <thead>
+            <th scope="col">Id</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Duel</th>
+            <th scope="col">Gagnant ?</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th> <!-- Associer une ligne avec les colonnes d'entêtes -->
+                <td>Chewie</td>
+                <td>Duel 1</td>
+                <td>Oui</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
